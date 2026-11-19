@@ -1,5 +1,5 @@
 {
-  "name": "@bingvader/fluid-scale",
+  "name": "fluid-scale",
   "version": "0.1.0",
   "description": "Zero-dependency fluid clamp math with optional PostCSS, React and Native adapters",
   "type": "module",
