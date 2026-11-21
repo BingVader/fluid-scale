@@ -1,18 +1,18 @@
-# fluid-scale
+# @bingvader/fluid-scale
 
 Fluid responsive scaling utilities and platform adapters created by BingVader.
 
 ## Modules
 
-- `fluid-scale`: Core linear clamp calculation (`computeClamp`).
-- `fluid-scale/postcss`: Build-time PostCSS plugin (`postcssFluidScale`).
-- `fluid-scale/react`: React components (`FluidGrid`) and layout guards (`useLayoutGuard`).
-- `fluid-scale/native`: React Native dimensions-aware hook (`useFluidNative`).
+- `@bingvader/fluid-scale`: Core linear clamp calculation (`computeClamp`).
+- `@bingvader/fluid-scale/postcss`: Build-time PostCSS plugin (`postcssFluidScale`).
+- `@bingvader/fluid-scale/react`: React components (`FluidGrid`) and layout guards (`useLayoutGuard`).
+- `@bingvader/fluid-scale/native`: React Native dimensions-aware hook (`useFluidNative`).
 
 ## Core Usage
 
 ```ts
-import { computeClamp } from 'fluid-scale';
+import { computeClamp } from '@bingvader/fluid-scale';
 
 const fontSize = computeClamp(32, 16);
 ```
@@ -20,7 +20,7 @@ const fontSize = computeClamp(32, 16);
 ## PostCSS Plugin
 
 ```js
-import postcssFluidScale from 'fluid-scale/postcss';
+import postcssFluidScale from '@bingvader/fluid-scale/postcss';
 
 export default {
   plugins: [
@@ -38,7 +38,7 @@ Declarations can opt out using `/* fluid-ignore */`. Media queries and values be
 ## React Grid & Layout Guard
 
 ```tsx
-import { FluidGrid, useLayoutGuard } from 'fluid-scale/react';
+import { FluidGrid, useLayoutGuard } from '@bingvader/fluid-scale/react';
 
 export function GridExample() {
   useLayoutGuard();
@@ -53,7 +53,7 @@ export function GridExample() {
 ## React Native
 
 ```tsx
-import { useFluidNative } from 'fluid-scale/native';
+import { useFluidNative } from '@bingvader/fluid-scale/native';
 
 export function NativeExample() {
   const { scale, moderateScale, isTablet } = useFluidNative();
