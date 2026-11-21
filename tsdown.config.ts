@@ -10,6 +10,9 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   dts: true,
   clean: true,
+  outputOptions: {
+    exports: 'named',
+  },
   deps: {
     neverBundle: ['postcss', 'react', 'react-dom', 'react-native'],
   },
