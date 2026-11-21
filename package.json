@@ -5,6 +5,24 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BingVader/fluid-scale.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BingVader/fluid-scale/issues"
+  },
+  "homepage": "https://github.com/BingVader/fluid-scale#readme",
+  "keywords": [
+    "fluid",
+    "clamp",
+    "responsive",
+    "typography",
+    "scaling",
+    "postcss",
+    "react",
+    "react-native"
+  ],
   "type": "module",
   "author": "BingVader",
   "license": "MIT",
